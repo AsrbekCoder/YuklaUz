@@ -1,0 +1,48 @@
+@import "./imgWidth";
+@import "./global";
+@mixin flexBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  &_header {
+    border: 1px solid rgba($color: #000000, $alpha: 0.09);
+    padding: 50px 20px;
+    border-radius: 30px;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_brand img {
+    @include imgWidth(8rem);
+  }
+}
+nav {
+  ul {
+    @include flexBox();
+    li {
+      @include flexBox();
+      margin-right: 2rem;
+      a {
+        filter: grayscale(100%);
+        @include flexBox();
+        transition: 0.2s;
+        &:hover {
+          filter: grayscale(0%);
+        }
+
+        &.active {
+          filter: grayscale(0%);
+        }
+
+        img {
+          margin-right: 0.5rem;
+          @include imgWidth(35px);
+        }
+      }
+    }
+  }
+}

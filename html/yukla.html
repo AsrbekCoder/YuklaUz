@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="navbar_header">
+        <div class="navbar_brand">
+          <img
+            src="https://see.fontimg.com/api/renderfont4/519DV/eyJyIjoiZnMiLCJoIjo4MSwidyI6MTI1MCwiZnMiOjY1LCJmZ2MiOiIjRkU2RTZFIiwiYmdjIjoiIzE2MzJERCIsInQiOjF9/WXVrbGEgdXo/better-grade.png"
+            alt=""
+          />
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#" class="active"
+                ><img src="../assest/youtube.png" alt="" />YouTube</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../assest/instagram.png" alt="" />Instagram</a
+              >
+            </li>
+            <li>
+              <a href="#"><img src="../assest/tik-tok.png" alt="" />TikTok</a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../assest/facebook (1).png" alt="" />Facebook</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="get_link"></div>
+    </div>
+
+    <canvas class="background"></canvas>
+    <script>
+      window.onload = function () {
+        Particles.init({
+          selector: ".background",
+          maxParticles: 250,
+          sizeVariations: 10,
+          color: "#ffff",
+          speed: 1,
+        });
+      };
+    </script>
+    <script src="../Js/particles.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+body {
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+}
+#root {
+  height: 80vh;
+  background-color: #fff;
+  margin: 35px 60px;
+  border-radius: 30px;
+}
+
+.background {
+  position: absolute;
+  pointer-events: none;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
