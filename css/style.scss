@@ -1,5 +1,7 @@
 @import "./imgWidth";
 @import "./global";
+
+@import "./varibles";
 @mixin flexBox {
   display: flex;
   justify-content: center;
@@ -44,5 +46,74 @@ nav {
         }
       }
     }
+  }
+}
+
+
+
+
+//linkBox
+
+.link_box{
+  height: 80%;
+  @include flexBox();
+}
+
+a {
+  color: inherit;
+
+  &:hover {
+    color: $button-bg-color;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-block;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+
+  &--primary {
+    background: $button-bg-color;
+    color: $button-text-color;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+    border-radius: 2px;
+    padding: 12px 36px;
+
+    &:hover {
+      background: darken($button-bg-color, 4%);
+    }
+
+    &:active {
+      background: $button-bg-color;
+      box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
+    }
+  }
+
+  &--inside {
+    margin-left: -96px;
+  }
+}
+
+//** form
+.form {
+  &__field {
+    width: 360px;
+    background: #e3e1e1;
+    color: $input-text-color;
+    font: inherit;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
+    border: 0;
+    outline: 0;
+    padding: 22px 18px;
   }
 }

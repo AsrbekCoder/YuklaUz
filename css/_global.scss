@@ -13,6 +13,13 @@ li {
 a {
   text-decoration: none;
 }
+@mixin getBgColor($color){
+  height: 100vh;
+  background-color: $color;
+  margin: 35px 60px;
+  border-radius: 30px;
+}
+
 
 .container {
   width: 80%;
@@ -23,10 +30,9 @@ body {
   background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
 }
 #root {
-  height: 80vh;
-  background-color: #fff;
-  margin: 35px 60px;
-  border-radius: 30px;
+@include getBgColor(#fff);
+  box-shadow: 0 5px 20px rgba(#0000, 0.4);
+
 }
 
 .background {
